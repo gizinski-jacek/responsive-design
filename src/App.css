@@ -1,0 +1,443 @@
+:root {
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 5rem;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 0.8rem;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+svg {
+	height: 16px;
+	width: 16px;
+}
+
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	box-shadow: 0 0 48px rgba(0, 0, 0, 0.15);
+}
+
+nav button {
+	visibility: hidden;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+nav div {
+	display: flex;
+	align-items: center;
+	color: rgb(150, 150, 150);
+	z-index: 500;
+}
+
+.ham-menu {
+	display: block;
+	fill: rgb(150, 150, 150);
+	height: 24px;
+	width: 24px;
+	transition: ease-in-out 0.3s;
+}
+
+nav.show-menu .ham-menu {
+	transform: rotate(180deg);
+}
+
+aside {
+	position: absolute;
+	padding-top: 36px;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	color: white;
+	background-color: rgb(0, 0, 0);
+	transform: translateX(-100%);
+	font-weight: 600;
+	transition: ease-in-out 0.3s;
+	z-index: 100;
+}
+
+aside div {
+	display: block;
+	position: absolute;
+	left: 0;
+	margin: auto;
+	bottom: 36px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+nav.show-menu aside {
+	transform: translateX(0);
+}
+
+section {
+	padding: 24px;
+}
+
+.main-grid-articles {
+	scrollbar-width: none;
+	overflow: auto hidden;
+	white-space: nowrap;
+	display: flex;
+}
+
+.main-grid-articles > div {
+	padding: 12px;
+}
+
+.channels-scrollbar-horizontal {
+	scrollbar-width: none;
+	overflow: auto hidden;
+	white-space: nowrap;
+	display: flex;
+}
+
+.newsletter {
+	color: rgb(255, 255, 255);
+	background-image: url('https://next.tnwcdn.com/assets/next/img/spacesbg.png');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 50%;
+	text-align: center;
+}
+
+.newsletter h3,
+.newsletter p {
+	padding: 12px;
+}
+
+.newsletter input,
+.newsletter button {
+	border: none;
+	padding: 12px;
+	font-size: 1.25rem;
+}
+
+.newsletter input {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.newsletter button {
+	font-weight: 600;
+	color: rgb(255, 255, 255);
+	background-color: rgb(200, 0, 150);
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.newsletter button:hover {
+	background-color: rgb(75, 175, 255);
+}
+
+.social-media svg {
+	height: 24px;
+	width: 24px;
+	border-radius: 4px;
+	fill: gray;
+}
+
+.social-media li {
+	display: inline-block;
+	margin: 12px;
+}
+
+.work-with-us h3 {
+	margin-top: 24px;
+	font-size: 1rem;
+	color: rgb(201, 0, 201);
+}
+
+.work-with-us h2,
+.work-with-us p {
+	padding: 12px;
+}
+
+.work-with-us p {
+	text-align: justify;
+	text-align-last: center;
+}
+
+.work-with-us button {
+	background-color: rgb(0, 190, 190);
+	color: rgb(255, 255, 255);
+	padding: 16px 24px;
+	border: none;
+	border-radius: 4px;
+	margin: 24px;
+}
+
+.work-with-us-images * {
+	padding: 12px;
+}
+
+.work-with-us-images img {
+	max-height: 112px;
+	max-width: 112px;
+}
+
+.work-with-us-images {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.work-with-us-images > * {
+	flex-basis: 50%;
+	max-width: 50%;
+}
+
+.sponsors {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.sponsors > * {
+	width: 250px;
+}
+
+footer {
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+footer a {
+	color: rgb(0, 200, 225);
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+.footer-side {
+	display: flex;
+}
+
+.footer-side > * {
+	width: 50%;
+}
+
+.footer-tnw-more,
+.footer-tnw-about {
+	display: block;
+}
+
+.footer-bottom {
+	border-top: 1px solid rgb(150, 150, 150);
+	color: rgb(150, 150, 150);
+	padding: 40px;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	aside {
+		width: 376px;
+	}
+
+	aside div {
+		width: 376px;
+	}
+
+	main {
+		transition: ease-in-out 0.3s;
+	}
+
+	main.show-menu {
+		transform: translateX(400px);
+	}
+
+	.main-grid-articles {
+		overflow: unset;
+		white-space: nowrap;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.main-grid-articles :first-child {
+		grid-column: 1/-1;
+	}
+
+	.latest-stories ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.latest-stories ul li {
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+
+	.work-with-us-top {
+		display: flex;
+	}
+
+	.work-with-us-text {
+		max-width: 50%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	nav h3 {
+		color: rgb(0, 0, 0);
+	}
+
+	nav button {
+		visibility: visible;
+	}
+
+	.ham-menu {
+		display: none;
+	}
+
+	main {
+		transform: translateX(0);
+	}
+
+	main.show-menu {
+		transform: translateX(0);
+	}
+
+	aside {
+		position: relative;
+		top: 0;
+		left: 0;
+		height: unset;
+		width: unset;
+		padding-top: 0;
+		color: rgb(75, 75, 75);
+		background-color: unset;
+		transform: unset;
+		transition: unset;
+	}
+
+	aside ul li {
+		display: inline-block;
+	}
+
+	.main-grid-articles {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+	}
+
+	.main-grid-articles > div {
+		grid-column: span 1;
+		grid-row: span 2;
+	}
+
+	.main-grid-articles :first-child {
+		grid-column: 1 / span 2;
+		grid-row: 1 / span 3;
+	}
+
+	.main-grid-articles :last-child {
+		grid-column: 3 / span 2;
+		grid-row: 3 / span 3;
+	}
+
+	.main-grid-articles :nth-child(3) {
+		grid-column: 1 / span 2;
+		grid-row: 4 / span 2;
+	}
+
+	.popular-today ol {
+		display: flex;
+	}
+
+	.latest-stories ul li {
+		flex-basis: 25%;
+		max-width: 25%;
+	}
+
+	.sponsors {
+		flex-wrap: nowrap;
+	}
+
+	.footer-top {
+		display: flex;
+	}
+
+	.footer-top > div {
+		width: 50%;
+	}
+}
+
+/* Simple Media Query Reporter */
+
+body:after {
+	content: 'less than 320px';
+	font-size: 150%;
+	font-weight: bold;
+	position: fixed;
+	bottom: 40px;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	background-color: hsla(1, 60%, 40%, 0.7);
+	color: #fff;
+}
+
+@media only screen and (min-width: 320px) {
+	body:after {
+		content: '320 to 480px';
+		background-color: hsla(90, 60%, 40%, 0.7);
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	body:after {
+		content: '480 to 768px';
+		background-color: hsla(180, 60%, 40%, 0.7);
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	body:after {
+		content: '768 to 1024px';
+		background-color: hsla(270, 60%, 40%, 0.7);
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	body:after {
+		content: '1024 and up';
+		background-color: hsla(360, 60%, 40%, 0.7);
+	}
+}
