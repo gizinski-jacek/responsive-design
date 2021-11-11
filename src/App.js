@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter, Link, NavLink } from 'react-router-dom';
 import './App.css';
 
 const App = () => {
@@ -61,7 +61,9 @@ const App = () => {
 				</div>
 				<aside style={{ transition: noTransition ? 'none' : '' }}>
 					<ul>
-						<li>HOME</li>
+						<NavLink exact={true} to='/' activeClassName='active'>
+							<li>HOME</li>
+						</NavLink>
 						<li>NEWS</li>
 						<li>EVENTS</li>
 						<li>PROGRAMS</li>
@@ -129,12 +131,12 @@ const App = () => {
 						<Link to=''>Jobs</Link>
 						<Link to=''>Contact</Link>
 					</div>
+					<button type='button'>
+						<svg viewBox='0 0 16 16'>
+							<path d='M1.11621 4.2666a2.0026 2.0026 0 0 1-.583-.8833v-.7666A.47788.47788 0 0 1 .667 2.2749a.56688.56688 0 0 1 .3164-.1748 49.3662 49.3662 0 0 1 14.0166 0 .57417.57417 0 0 1 .333.1748.482.482 0 0 1 .13379.3418v.7666a2.0026 2.0026 0 0 1-.583.8833L9.2002 8.56689A1.88658 1.88658 0 0 1 8 8.93311a1.88658 1.88658 0 0 1-1.2002-.36622zM10.18359 10l5.28321-4.0498v7.4331a.48117.48117 0 0 1-.13379.3418.57141.57141 0 0 1-.333.1748 48.721 48.721 0 0 1-7 .5 49.29676 49.29676 0 0 1-7.0166-.5.564.564 0 0 1-.31641-.1748.47707.47707 0 0 1-.13379-.3418V5.9502L5.81641 10A3.5224 3.5224 0 0 0 8 10.6665 3.5224 3.5224 0 0 0 10.18359 10z'></path>
+						</svg>
+					</button>
 				</aside>
-				<button type='button'>
-					<svg viewBox='0 0 16 16'>
-						<path d='M1.11621 4.2666a2.0026 2.0026 0 0 1-.583-.8833v-.7666A.47788.47788 0 0 1 .667 2.2749a.56688.56688 0 0 1 .3164-.1748 49.3662 49.3662 0 0 1 14.0166 0 .57417.57417 0 0 1 .333.1748.482.482 0 0 1 .13379.3418v.7666a2.0026 2.0026 0 0 1-.583.8833L9.2002 8.56689A1.88658 1.88658 0 0 1 8 8.93311a1.88658 1.88658 0 0 1-1.2002-.36622zM10.18359 10l5.28321-4.0498v7.4331a.48117.48117 0 0 1-.13379.3418.57141.57141 0 0 1-.333.1748 48.721 48.721 0 0 1-7 .5 49.29676 49.29676 0 0 1-7.0166-.5.564.564 0 0 1-.31641-.1748.47707.47707 0 0 1-.13379-.3418V5.9502L5.81641 10A3.5224 3.5224 0 0 0 8 10.6665 3.5224 3.5224 0 0 0 10.18359 10z'></path>
-					</svg>
-				</button>
 			</nav>
 			<main className={showMenu ? 'show-menu' : ''}>
 				<section className='main-articles'>
@@ -154,30 +156,35 @@ const App = () => {
 					<h2>POPULAR ARTICLES TODAY</h2>
 					<ol>
 						<Link to='/'>
+							<span>1</span>
 							<li>
 								Move over Python — Rust is the highest paid
 								programming language of 2021
 							</li>
 						</Link>
 						<Link to='/'>
+							<span>2</span>
 							<li>
 								Get these Python questions right to ace your
 								data science job interview
 							</li>
 						</Link>
 						<Link to='/'>
+							<span>3</span>
 							<li>
 								Review: Amazon’s Kindle Paperwhite (2021) is
 								even better than the Oasis
 							</li>
 						</Link>
 						<Link to='/'>
+							<span>4</span>
 							<li>
 								How to make almost any digital piano sound like
 								the real thing, part 2
 							</li>
 						</Link>
 						<Link to='/'>
+							<span>5</span>
 							<li>
 								Everything you wanted to know about the
 								metaverse (but were afraid to ask)
@@ -224,42 +231,79 @@ const App = () => {
 				<section className='explore-our-channels'>
 					<h2>Explore our channels</h2>
 					<div className='channels-scrollbar-horizontal'>
-						<div>
+						<div
+							style={{
+								backgroundImage:
+									'url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-plugged.jpg&signature=4423a77a45ff6281a089424a8dd0bc24)',
+							}}
+						>
 							<img
 								src='https://next.tnwcdn.com/assets/next/img/placeholder/media/plugged.svg'
 								alt='plugged'
 							/>
-							<h3>
+							<p>
 								Your sardonic source for consumer tech stories
-							</h3>
+							</p>
 						</div>
-						<div>
+						<div
+							style={{
+								backgroundImage:
+									'url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-neural.jpg&signature=7b20700b0f58af3860449664ae1a5e68)',
+							}}
+						>
 							<img
 								src='https://next.tnwcdn.com/assets/next/img/placeholder/media/neural.svg'
 								alt='neural'
 							/>
-							<h3>Human-centric AI news and analysis</h3>
+							<p>Human-centric AI news and analysis</p>
 						</div>
-						<div>
+						<div
+							style={{
+								backgroundImage:
+									'url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-shift.jpg&signature=1d3ef28f5220f870b7e289810caa80a3)',
+							}}
+						>
 							<img
 								src='https://next.tnwcdn.com/assets/next/img/placeholder/media/shift.svg'
 								alt='shift'
 							/>
-							<h3>Driving the future of sustainable mobility</h3>
+							<p>Driving the future of sustainable mobility</p>
 						</div>
-						<div>
+						<div
+							style={{
+								backgroundImage:
+									'url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-growth-quarters.jpg&signature=72ccfd9e92f942be8ace3526d0dc3aab)',
+							}}
+						>
 							<img
 								src='https://next.tnwcdn.com/assets/next/img/placeholder/media/growth-quarters.svg'
 								alt='growth-quarters'
 							/>
-							<h3>No-nonsense perspectives on startup growth</h3>
+							<p>No-nonsense perspectives on startup growth</p>
 						</div>
-						<div>
+						<div
+							style={{
+								backgroundImage:
+									'url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-hardfork.jpg&signature=77d9941cfc302cb2e25c39ab3043fa7b)',
+							}}
+						>
+							<img
+								src='https://next.tnwcdn.com/assets/next/img/placeholder/media/hardfork.svg'
+								alt='house-of-talent'
+							/>
+							<p>Inside money, markets, and Big Tech</p>
+						</div>
+						<div
+							style={{
+								backgroundImage:
+									'url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-house-of-talent.jpg&signature=00b64ed0c1f08232e038c697e3f8f755)',
+							}}
+						>
 							<img
 								src='https://next.tnwcdn.com/assets/next/img/placeholder/media/house-of-talent.svg'
 								alt='house-of-talent'
 							/>
-							<h3>The hottest new jobs in tech</h3>
+							<p>The hottest new jobs in tech</p>
 						</div>
 					</div>
 				</section>
