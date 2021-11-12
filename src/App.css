@@ -6,6 +6,11 @@
 * {
 	box-sizing: border-box;
 }
+
+body {
+	min-width: 320px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -52,6 +57,7 @@ nav {
 	width: 100%;
 	box-shadow: 0 0 48px rgba(0, 0, 0, 0.2);
 	background-color: rgb(255, 255, 255);
+	z-index: 500;
 }
 
 aside button {
@@ -171,36 +177,36 @@ nav.show-menu aside {
 	padding: 12px;
 }
 
-.channels-scrollbar-horizontal {
+.channels-scroll-horizontal {
 	scrollbar-width: none;
 	overflow: auto hidden;
 	white-space: nowrap;
 	display: flex;
 }
 
-.channels-scrollbar-horizontal > div {
+.channels-scroll-horizontal > div {
 	padding: 12px 0;
 	min-width: 216px;
 	min-height: 256px;
 	flex-basis: calc(20% - 1rem);
 	height: 256px;
-	white-space: normal;
+	white-space: pre-wrap;
 	background-size: cover;
 	background-position: 50%;
 	text-align: center;
 }
 
-.channels-scrollbar-horizontal > div:not(:first-child) {
+.channels-scroll-horizontal > div:not(:first-child) {
 	margin-left: 12px;
 }
 
-.channels-scrollbar-horizontal img {
+.channels-scroll-horizontal img {
 	margin: 12px 12px 100px 12px;
 	width: 125px;
 	height: 25px;
 }
 
-.channels-scrollbar-horizontal p {
+.channels-scroll-horizontal p {
 	color: rgb(255, 255, 255);
 	text-align: center;
 	padding: 24px;
@@ -254,6 +260,79 @@ nav.show-menu aside {
 .social-media li {
 	display: inline-block;
 	margin-right: 12px;
+}
+
+.watch-our-content {
+	min-width: 100%;
+}
+
+.videos-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-video {
+	display: flex;
+	flex-direction: column;
+	min-width: 212px;
+	max-width: 1060px;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+.main-video h3,
+.main-video span {
+	margin: 12px;
+}
+
+.video-player-wrapper {
+	min-height: 240px;
+	min-width: 426px;
+}
+
+.video-player {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+
+.video-player iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.playlist-scroll {
+	overflow: auto hidden;
+	white-space: nowrap;
+	display: flex;
+}
+
+.playlist-scroll > div {
+	display: flex;
+	flex-direction: column;
+	min-width: 208px;
+	max-width: 208px;
+	margin-right: 12px;
+	margin-left: 0;
+	margin-bottom: 24px;
+}
+
+.playlist-scroll a {
+	margin: 12px 0;
+	margin-right: 12px;
+}
+
+.playlist-scroll img {
+	width: 100%;
+}
+
+.playlist-scroll > div > span {
+	white-space: pre-wrap;
+	line-height: 1.5rem;
+	margin: 8px 0;
 }
 
 .work-with-us-text h3 {
@@ -442,6 +521,31 @@ footer a:hover {
 
 	.latest-stories ul li:nth-child(2n) {
 		padding-left: 12px;
+	}
+
+	.videos-container {
+		flex-direction: row;
+		max-height: 600px;
+	}
+
+	.main-video {
+		max-width: unset;
+		width: 100%;
+	}
+
+	.playlist-scroll {
+		overflow: hidden auto;
+		flex-direction: column;
+		max-height: 600px;
+	}
+
+	.playlist-scroll > div {
+		margin: 0;
+		margin-left: 24px;
+	}
+
+	.playlist-scroll a {
+		margin: 0;
 	}
 
 	.work-with-us-top {
