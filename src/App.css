@@ -50,7 +50,8 @@ body {
 }
 
 nav {
-	position: fixed;
+	position: sticky;
+	top: 0;
 	display: flex;
 	align-items: center;
 	height: 56px;
@@ -76,7 +77,7 @@ nav h3 {
 }
 
 section {
-	padding: 24px 48px;
+	padding: 24px 8px;
 	margin: 0 auto;
 }
 
@@ -118,7 +119,7 @@ aside {
 	padding-top: 56px;
 	top: 0;
 	left: 0;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	color: rgb(200, 200, 200);
 	background-color: rgb(0, 0, 0);
@@ -144,18 +145,31 @@ aside > ul li:hover {
 }
 
 aside div {
-	display: block;
+	display: flex;
+	flex-direction: column;
 	position: absolute;
 	text-align: center;
 	left: 0;
-	margin: auto;
+	width: 100%;
 	bottom: 0;
 	padding: 20px;
 	background-color: rgba(255, 255, 255, 0.15);
+	transition: ease-in-out 0.3s;
 }
 
-aside div > a {
-	padding: 24px;
+aside div .social-media li {
+	padding: 10px;
+	background-color: rgb(0, 0, 0);
+	border-radius: 50%;
+}
+
+aside div > span {
+	padding: 12px;
+}
+
+aside div > span > a {
+	color: rgb(255, 255, 255);
+	padding: 12px;
 }
 
 nav.show-menu aside {
@@ -173,8 +187,116 @@ nav.show-menu aside {
 	display: flex;
 }
 
-.main-grid-articles > div {
+.main-grid-articles > * {
+	color: rgb(255, 255, 255);
+	margin-right: 8px;
+	position: relative;
+	flex: 0 0 85vw;
+}
+
+.main-grid-articles > * > img {
+	width: 100%;
+	height: 100%;
+	background-position: bottom;
+	background-size: cover;
+	object-fit: cover;
+}
+
+.main-grid-articles > * > span {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 24px;
+	white-space: pre-wrap;
+	text-align: left;
+	background-image: linear-gradient(
+		to bottom,
+		rgba(255, 255, 255, 0),
+		rgba(0, 0, 0, 1)
+	);
+}
+
+.main-grid-articles > * h2,
+.main-grid-articles > * h3,
+.main-grid-articles > * h4 {
+	margin: 4px 24px;
+}
+
+.main-grid-articles > :nth-child(3) > span {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.main-grid-articles > :nth-child(3) > span > * {
+	position: unset;
+	font-size: 1.5rem;
+	margin: 12px 24px;
+	line-height: 1.25rem;
+}
+
+.main-grid-articles > :nth-child(3) > span > a > button {
+	padding: 4px 16px;
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 20px;
+}
+
+.popular-today {
+	text-align: center;
+}
+
+.popular-today > * {
 	padding: 12px;
+}
+
+.popular-today span {
+	color: rgba(200, 0, 150);
+	font-size: 36px;
+	margin-right: 12px;
+}
+
+.popular-today a {
+	display: flex;
+	color: rgb(0, 0, 0);
+	padding: 12px;
+}
+
+.latest-stories h2 {
+	text-align: center;
+}
+
+.latest-stories li {
+	display: flex;
+	margin-bottom: 24px;
+}
+
+.latest-stories li span > * {
+	margin-bottom: 12px;
+}
+
+.latest-stories button {
+	width: 100%;
+	padding: 12px;
+	background-color: rgba(255, 255, 255, 0);
+	border: 1px solid rgb(175, 175, 175);
+	border-radius: 100px;
+	font-weight: 600;
+}
+
+.latest-stories ul img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-right: 24px;
 }
 
 .channels-scroll-horizontal {
@@ -182,6 +304,10 @@ nav.show-menu aside {
 	overflow: auto hidden;
 	white-space: nowrap;
 	display: flex;
+}
+
+.explore-our-channels h2 {
+	text-align: center;
 }
 
 .channels-scroll-horizontal > div {
@@ -226,10 +352,20 @@ nav.show-menu aside {
 	padding: 12px;
 }
 
+.newsletter > div {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.newsletter input {
+	flex: 1;
+}
+
 .newsletter input,
 .newsletter button {
 	border: none;
-	padding: 12px;
+	padding: 8px 16px;
 	font-size: 1.25rem;
 }
 
@@ -250,6 +386,15 @@ nav.show-menu aside {
 	background-color: rgb(75, 175, 255);
 }
 
+.social-media {
+	display: flex;
+	padding: 12px;
+}
+
+.newsletter .social-media {
+	justify-content: center;
+}
+
 .social-media svg {
 	height: 24px;
 	width: 24px;
@@ -258,7 +403,6 @@ nav.show-menu aside {
 }
 
 .social-media li {
-	display: inline-block;
 	margin-right: 12px;
 }
 
@@ -446,12 +590,26 @@ footer a:hover {
 }
 
 @media only screen and (min-width: 768px) {
+	section {
+		padding: 24px 48px;
+		margin: 0 auto;
+	}
+
 	aside {
 		width: 400px;
 	}
 
 	aside div {
 		width: 400px;
+	}
+
+	aside div .social-media {
+		padding: 0;
+		justify-content: space-evenly;
+	}
+
+	aside div .social-media li {
+		margin-right: 8px;
 	}
 
 	aside button {
@@ -473,6 +631,10 @@ footer a:hover {
 		transform: translateX(400px);
 	}
 
+	.main-articles .top {
+		padding: 40px 24px 40px 0;
+	}
+
 	.main-grid-articles {
 		overflow: unset;
 		white-space: nowrap;
@@ -480,28 +642,12 @@ footer a:hover {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	.main-grid-articles > * {
+		margin-bottom: 8px;
+	}
+
 	.main-grid-articles :first-child {
 		grid-column: 1/-1;
-	}
-
-	.popular-today {
-		text-align: center;
-	}
-
-	.popular-today > * {
-		padding: 12px;
-	}
-
-	.popular-today span {
-		color: rgba(200, 0, 150);
-		font-size: 36px;
-		margin-right: 12px;
-	}
-
-	.popular-today a {
-		display: flex;
-		color: rgb(0, 0, 0);
-		padding: 12px;
 	}
 
 	.latest-stories ul {
@@ -515,12 +661,25 @@ footer a:hover {
 		padding: 12px 0;
 	}
 
+	.latest-stories h2 {
+		text-align: left;
+	}
+
 	.latest-stories ul li:nth-child(1n) {
 		padding-right: 12px;
 	}
 
 	.latest-stories ul li:nth-child(2n) {
 		padding-left: 12px;
+	}
+
+	.newsletter > div input {
+		flex: unset;
+		width: 50%;
+	}
+
+	.explore-our-channels h2 {
+		text-align: left;
 	}
 
 	.videos-container {
@@ -619,6 +778,7 @@ footer a:hover {
 		background-color: unset;
 		transform: unset;
 		transition: unset;
+		height: unset;
 	}
 
 	aside > ul li {
@@ -633,7 +793,8 @@ footer a:hover {
 	.main-articles .top {
 		display: flex;
 		justify-content: space-between;
-		padding: 84px 48px;
+		align-items: center;
+		padding: 80px 24px 80px 0;
 	}
 
 	.main-grid-articles {
@@ -641,22 +802,27 @@ footer a:hover {
 		grid-template-rows: repeat(5, 1fr);
 	}
 
-	.main-grid-articles > div {
+	.main-grid-articles > a {
 		grid-column: span 1;
 		grid-row: span 2;
 	}
 
-	.main-grid-articles :first-child {
+	.main-grid-articles > :first-child h3,
+	.main-grid-articles > :last-child h3 {
+		font-size: 2.5rem;
+	}
+
+	.main-grid-articles > :first-child {
 		grid-column: 1 / span 2;
 		grid-row: 1 / span 3;
 	}
 
-	.main-grid-articles :last-child {
+	.main-grid-articles > :last-child {
 		grid-column: 3 / span 2;
 		grid-row: 3 / span 3;
 	}
 
-	.main-grid-articles :nth-child(3) {
+	.main-grid-articles > :nth-child(3) {
 		grid-column: 1 / span 2;
 		grid-row: 4 / span 2;
 	}
@@ -665,9 +831,25 @@ footer a:hover {
 		display: flex;
 	}
 
+	.popular-today li {
+		line-height: 1.5rem;
+		text-align: left;
+	}
+
 	.latest-stories ul li {
+		flex-direction: column;
 		flex-basis: 25%;
 		max-width: 25%;
+	}
+
+	.latest-stories ul img {
+		border-radius: 0;
+		margin-right: 0;
+		margin-bottom: 12px;
+		border-radius: 0;
+		width: auto;
+		height: auto;
+		height: 124px;
 	}
 
 	.work-with-us {
