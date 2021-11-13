@@ -128,8 +128,10 @@ const App = () => {
 								</Link>
 							</li>
 						</ul>
-						<Link to=''>Jobs</Link>
-						<Link to=''>Contact</Link>
+						<span>
+							<Link to=''>Jobs</Link>
+							<Link to=''>Contact</Link>
+						</span>
 					</div>
 					<button type='button'>
 						<svg viewBox='0 0 16 16'>
@@ -145,88 +147,222 @@ const App = () => {
 						<h2>The heart of tech</h2>
 					</div>
 					<div className='main-grid-articles'>
-						<div>art</div>
-						<div>art</div>
-						<div>art</div>
-						<div>art</div>
-						<div>art</div>
+						<a href='https://thenextweb.com/news/youtube-hiding-dislike-counts-will-comfort-creators-to-viewers-detriment'>
+							<img
+								src='https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fyt_2021-11-12-102012_snnq.jpeg&signature=a7e0b3d6f685bc1af621a7f546a649fe'
+								alt=''
+							/>
+							<span>
+								<h4>DISLIKE</h4>
+								<h3>
+									YouTube hiding dislike counts is gonna suck
+									for viewers
+								</h3>
+							</span>
+						</a>
+						<a href='https://thenextweb.com/news/hide-the-pain-harold-autumn-stock-photos-meme'>
+							<img
+								src='https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fharold.jpeg&signature=4efb668e18eb7a36cedf37519d2219ed'
+								alt=''
+							/>
+							<span>
+								<h4>HIDE THE PAIN</h4>
+								<h3>
+									Harold’s new autumn ‘stock photos’ perfectly
+									capture your dark day blues
+								</h3>
+							</span>
+						</a>
+						<div>
+							<img
+								src='https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/home-header_advert-tnw2021-03.jpg'
+								alt=''
+							/>
+							<span>
+								<h3>{`Mark your calendar for June 16 & 17!`}</h3>
+								<h3>Join us at TNW Conference 2022</h3>
+								<a href='https://thenextweb.com/conference/'>
+									<button type='button'>GET TICKETS</button>
+								</a>
+							</span>
+						</div>
+						<a href='https://thenextweb.com/news/new-dark-matter-theory-has-a-terrifying-explanation-for-the-universes-expansion'>
+							<img
+								src='https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fphysics.jpeg&signature=a4a2b49dfee7f9bded9a378c1f2aa2f6'
+								alt=''
+							/>
+							<span>
+								<h4>DARK MATTER</h4>
+								<h3>
+									New dark matter theory has a terrifying
+									explanation for the universe’s expansion
+								</h3>
+							</span>
+						</a>
+						<a href='https://thenextweb.com/news/musk-tesla-share-twitter-sec-planned-analysis'>
+							<img
+								src='https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Ftwitter-elin.jpeg&signature=91ecade18ebd16073e5f75d67402a446'
+								alt=''
+							/>
+							<span>
+								<h4>DON'T KID YOURSELF</h4>
+								<h3>
+									Elon Musk wasn’t actually asking for your
+									opinion on his $5B Tesla stock sale
+								</h3>
+							</span>
+						</a>
 					</div>
 				</section>
 				<section className='popular-today'>
 					<h2>POPULAR ARTICLES TODAY</h2>
 					<ol>
-						<Link to='/'>
+						<a href='https://thenextweb.com/news/new-dark-matter-theory-has-a-terrifying-explanation-for-the-universes-expansion'>
 							<span>1</span>
 							<li>
 								Move over Python — Rust is the highest paid
 								programming language of 2021
 							</li>
-						</Link>
-						<Link to='/'>
+						</a>
+						<a href='https://thenextweb.com/news/musk-tesla-share-twitter-sec-planned-analysis'>
 							<span>2</span>
 							<li>
 								Get these Python questions right to ace your
 								data science job interview
 							</li>
-						</Link>
-						<Link to='/'>
+						</a>
+						<a href='https://thenextweb.com/news/this-mini-gaming-system-with-over-600-games-is-on-sale-at-this-30-pre-black-friday-price'>
 							<span>3</span>
 							<li>
 								Review: Amazon’s Kindle Paperwhite (2021) is
 								even better than the Oasis
 							</li>
-						</Link>
-						<Link to='/'>
+						</a>
+						<a href='https://thenextweb.com/news/maxed-out-m1x-macbook-pro-developers-analysis'>
 							<span>4</span>
 							<li>
 								How to make almost any digital piano sound like
 								the real thing, part 2
 							</li>
-						</Link>
-						<Link to='/'>
+						</a>
+						<a href='https://thenextweb.com/news/3-reasons-why-sodium-ion-batteries-could-dethrone-lithium'>
 							<span>5</span>
 							<li>
 								Everything you wanted to know about the
 								metaverse (but were afraid to ask)
 							</li>
-						</Link>
+						</a>
 					</ol>
 				</section>
 				<section className='latest-stories'>
 					<h2>Latest stories</h2>
 					<ul>
 						<li>
-							The Facebook whistleblower’s must-have rules to rein
-							in social media
+							<img
+								src='https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F11%2Frsz_1screenshot_2021-11-12_at_120300.jpeg&signature=c83f9f2d07f37d120a5cb6bb92815b71'
+								alt=''
+							/>
+							<span>
+								<h3>
+									Subaru unveils its first EV a week early and
+									I’m suspicious
+								</h3>
+								<h4>20 minutes ago</h4>
+							</span>
 						</li>
 						<li>
-							Here are 10 awesome deals on power generators and
-							solar panels at special pre-Black Friday prices
+							<img
+								src='https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F11%2FUntitled-design-49.jpg&signature=96ede88cfc188666ea2f64958eaac091'
+								alt=''
+							/>
+							<span>
+								<h3>
+									‘Safety by design’ features can reduce
+									stalking and domestic violence — but we need
+									companies to apply it
+								</h3>
+								<h4>50 minutes ago</h4>
+							</span>
 						</li>
 						<li>
-							Would you buy a car without its promised tech? BMW
-							latest to make compromises due to chip shortage
+							<img
+								src='https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F11%2FUntitled-design-50.jpg&signature=55432c8cbb43285308fa376ed55dd73d'
+								alt=''
+							/>
+							<span>
+								<h3>
+									Stop adding ‘competitive salary’ to job
+									listings — tell me your range already
+								</h3>
+								<h4>55 minutes ago</h4>
+							</span>
 						</li>
 						<li>
-							Banks are becoming the top VCs of the fintech world
-							— here’s why
+							<img
+								src='https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F11%2FTNW-PocketGuitar.jpeg&signature=11b627059be6afe6b02c0ec6cda5b207'
+								alt=''
+							/>
+							<span>
+								<h3>
+									These fantastic toys and puzzles at special
+									pre-Black Friday prices are a steal
+								</h3>
+								<h4>1 hour ago</h4>
+							</span>
 						</li>
 						<li>
-							Apple ‘steals’ former Tesla Autopilot director for
-							its iCar dream team
+							<img
+								src='https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F11%2FUntitled-design-33-5.jpg&signature=50ad58260c72719bd421cf6960124e3e'
+								alt=''
+							/>
+							<span>
+								<h3>
+									Help, I can’t get over Hyundai’s retro-chic
+									Grandeur concept EV
+								</h3>
+								<h4>2 hour ago</h4>
+							</span>
 						</li>
 						<li>
-							Here’s why tech firms are issuing their devs the
-							mighty M1 Max MacBooks
+							<img
+								src='https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F11%2FZuckerberg-VHS.jpg&signature=ddb9814e23ed9e5ef33aea77537a4b9b'
+								alt=''
+							/>
+							<span>
+								<h3>
+									3 moves the US government could make to rein
+									in Facebook
+								</h3>
+								<h4>2 hours ago</h4>
+							</span>
 						</li>
 						<li>
-							Clubhouse’s new record feature turns your rooms into
-							podcasts
+							<img
+								src='https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F11%2Fapplemeta.jpg&signature=ef27fa62f22a007d233f8ac10a1e6814'
+								alt=''
+							/>
+							<span>
+								<h3>
+									What to expect from Apple and Meta’s
+									upcoming headsets
+								</h3>
+								<h4>4 hours ago</h4>
+							</span>
 						</li>
 						<li>
-							How to successfully expand your brand into China
+							<img
+								src='https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F11%2FUntitled-design-42.jpg&signature=6db29a75d622881b3a5b48a6e269fa72'
+								alt=''
+							/>
+							<span>
+								<h3>
+									Why developers are so divided over WordPress
+								</h3>
+								<h4>6 hours ago</h4>
+							</span>
 						</li>
 					</ul>
+					<button type='button'>ALL NEWS</button>
 				</section>
 				<section className='explore-our-channels'>
 					<h2>Explore our channels</h2>
@@ -313,8 +449,10 @@ const App = () => {
 						Subscribe to our twice-weekly Big Spam or check out our
 						other newsletters.
 					</p>
-					<input type='email' placeholder='Email' />
-					<button type='button'>Subscribe</button>
+					<div>
+						<input type='email' placeholder='Email' />
+						<button type='button'>Subscribe</button>
+					</div>
 					<ul className='social-media'>
 						<li>
 							<Link to='/'>
