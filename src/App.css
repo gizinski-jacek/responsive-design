@@ -446,6 +446,7 @@ nav.show-menu aside {
 	left: 0;
 	height: 100%;
 	width: 100%;
+	max-height: 600px;
 }
 
 .playlist-scroll {
