@@ -61,7 +61,7 @@ const App = () => {
 				</div>
 				<aside style={{ transition: noTransition ? 'none' : '' }}>
 					<ul>
-						<NavLink exact={true} to='/' activeClassName='active'>
+						<NavLink exact='true' to='/' activeClassName='active'>
 							<li>HOME</li>
 						</NavLink>
 						<li>NEWS</li>
@@ -84,11 +84,7 @@ const App = () => {
 									<svg viewBox='0 0 16 16'>
 										<path d='M8,1.44144c2.1361,0,2.38911.00815,3.23268.04664a4.42649,4.42649,0,0,1,1.48549.27546A2.47861,2.47861,0,0,1,13.638,2.362a2.47851,2.47851,0,0,1,.59844.91986,4.42673,4.42673,0,0,1,.27546,1.48548c.03849.84358.04664,1.0966.04664,3.23269s-.00815,2.38911-.04664,3.23268a4.42675,4.42675,0,0,1-.27546,1.48549,2.6493,2.6493,0,0,1-1.51829,1.51829,4.42675,4.42675,0,0,1-1.48549.27546c-.84345.03849-1.09644.04664-3.23268.04664s-2.38923-.00815-3.23268-.04664a4.42675,4.42675,0,0,1-1.48549-.27546A2.47849,2.47849,0,0,1,2.362,13.638a2.47863,2.47863,0,0,1-.59844-.91986,4.42647,4.42647,0,0,1-.27546-1.48548C1.44959,10.38911,1.44144,10.1361,1.44144,8s.00815-2.38911.04664-3.23268a4.42649,4.42649,0,0,1,.27546-1.48549A2.47861,2.47861,0,0,1,2.362,2.362a2.47863,2.47863,0,0,1,.91986-.59844,4.42647,4.42647,0,0,1,1.48548-.27546C5.61089,1.44959,5.86391,1.44144,8,1.44144M8,0C5.82733,0,5.55489.0092,4.70161.04813A5.8719,5.8719,0,0,0,2.75969.42a3.92134,3.92134,0,0,0-1.417.92273A3.92134,3.92134,0,0,0,.42,2.75969,5.8719,5.8719,0,0,0,.04813,4.70161C.0092,5.55489,0,5.82732,0,8s.0092,2.4451.04813,3.29839A5.8719,5.8719,0,0,0,.42,13.24031a3.92142,3.92142,0,0,0,.92273,1.417,3.92134,3.92134,0,0,0,1.417.92273,5.8719,5.8719,0,0,0,1.94192.37186C5.55489,15.9908,5.82733,16,8,16s2.4451-.0092,3.29839-.04813A5.8719,5.8719,0,0,0,13.24031,15.58a4.09069,4.09069,0,0,0,2.3397-2.3397,5.8719,5.8719,0,0,0,.37186-1.94192C15.9908,10.4451,16,10.17267,16,8s-.0092-2.44511-.04813-3.29839A5.8719,5.8719,0,0,0,15.58,2.75969a3.92134,3.92134,0,0,0-.92273-1.417A3.92134,3.92134,0,0,0,13.24031.42,5.8719,5.8719,0,0,0,11.29839.04813C10.4451.0092,10.17267,0,8,0Z'></path>
 										<path d='M8,3.89189A4.10811,4.10811,0,1,0,12.10811,8,4.10811,4.10811,0,0,0,8,3.89189Zm0,6.77477A2.66667,2.66667,0,1,1,10.66667,8,2.66666,2.66666,0,0,1,8,10.66666Z'></path>
-										<circle
-											cx='12.27042'
-											cy='3.72958'
-											r='0.96'
-										></circle>
+										<circle cx='12.27042' cy='3.72958' r='0.96'></circle>
 									</svg>
 								</Link>
 							</li>
@@ -120,13 +116,6 @@ const App = () => {
 									</svg>
 								</Link>
 							</li>
-							<li>
-								<Link to='/'>
-									<svg viewBox='0 0 16 16'>
-										<path d='M14.81635,0H1.18015A1.16757,1.16757,0,0,0,0,1.15365V14.84546A1.16833,1.16833,0,0,0,1.18015,16h13.6362A1.17052,1.17052,0,0,0,16,14.84546V1.15365A1.16977,1.16977,0,0,0,14.81635,0ZM4.74622,13.63368H2.37072V5.99826h2.3755ZM3.55912,4.95505A1.37618,1.37618,0,1,1,4.93457,3.57878,1.37558,1.37558,0,0,1,3.55912,4.95505Zm10.07539,8.67863H11.26159V9.92057c0-.88541-.01519-2.02452-1.23311-2.02452-1.23481,0-1.42321.96506-1.42321,1.96115v3.77648H6.235V5.99826h2.2748V7.04207h.03255a2.49287,2.49287,0,0,1,2.24529-1.23329c2.40281,0,2.84689,1.581,2.84689,3.6374Z'></path>
-									</svg>
-								</Link>
-							</li>
 						</ul>
 						<span>
 							<Link to=''>Jobs</Link>
@@ -154,10 +143,7 @@ const App = () => {
 							/>
 							<span>
 								<h4>DISLIKE</h4>
-								<h3>
-									YouTube hiding dislike counts is gonna suck
-									for viewers
-								</h3>
+								<h3>YouTube hiding dislike counts is gonna suck for viewers</h3>
 							</span>
 						</a>
 						<a href='https://thenextweb.com/news/hide-the-pain-harold-autumn-stock-photos-meme'>
@@ -168,8 +154,8 @@ const App = () => {
 							<span>
 								<h4>HIDE THE PAIN</h4>
 								<h3>
-									Harold’s new autumn ‘stock photos’ perfectly
-									capture your dark day blues
+									Harold’s new autumn ‘stock photos’ perfectly capture your dark
+									day blues
 								</h3>
 							</span>
 						</a>
@@ -194,8 +180,8 @@ const App = () => {
 							<span>
 								<h4>DARK MATTER</h4>
 								<h3>
-									New dark matter theory has a terrifying
-									explanation for the universe’s expansion
+									New dark matter theory has a terrifying explanation for the
+									universe’s expansion
 								</h3>
 							</span>
 						</a>
@@ -207,8 +193,8 @@ const App = () => {
 							<span>
 								<h4>DON'T KID YOURSELF</h4>
 								<h3>
-									Elon Musk wasn’t actually asking for your
-									opinion on his $5B Tesla stock sale
+									Elon Musk wasn’t actually asking for your opinion on his $5B
+									Tesla stock sale
 								</h3>
 							</span>
 						</a>
@@ -220,36 +206,36 @@ const App = () => {
 						<a href='https://thenextweb.com/news/new-dark-matter-theory-has-a-terrifying-explanation-for-the-universes-expansion'>
 							<span>1</span>
 							<li>
-								Move over Python — Rust is the highest paid
-								programming language of 2021
+								Move over Python — Rust is the highest paid programming language
+								of 2021
 							</li>
 						</a>
 						<a href='https://thenextweb.com/news/musk-tesla-share-twitter-sec-planned-analysis'>
 							<span>2</span>
 							<li>
-								Get these Python questions right to ace your
-								data science job interview
+								Get these Python questions right to ace your data science job
+								interview
 							</li>
 						</a>
 						<a href='https://thenextweb.com/news/this-mini-gaming-system-with-over-600-games-is-on-sale-at-this-30-pre-black-friday-price'>
 							<span>3</span>
 							<li>
-								Review: Amazon’s Kindle Paperwhite (2021) is
-								even better than the Oasis
+								Review: Amazon’s Kindle Paperwhite (2021) is even better than
+								the Oasis
 							</li>
 						</a>
 						<a href='https://thenextweb.com/news/maxed-out-m1x-macbook-pro-developers-analysis'>
 							<span>4</span>
 							<li>
-								How to make almost any digital piano sound like
-								the real thing, part 2
+								How to make almost any digital piano sound like the real thing,
+								part 2
 							</li>
 						</a>
 						<a href='https://thenextweb.com/news/3-reasons-why-sodium-ion-batteries-could-dethrone-lithium'>
 							<span>5</span>
 							<li>
-								Everything you wanted to know about the
-								metaverse (but were afraid to ask)
+								Everything you wanted to know about the metaverse (but were
+								afraid to ask)
 							</li>
 						</a>
 					</ol>
@@ -264,8 +250,7 @@ const App = () => {
 							/>
 							<span>
 								<h3>
-									Subaru unveils its first EV a week early and
-									I’m suspicious
+									Subaru unveils its first EV a week early and I’m suspicious
 								</h3>
 								<h4>20 minutes ago</h4>
 							</span>
@@ -277,9 +262,8 @@ const App = () => {
 							/>
 							<span>
 								<h3>
-									‘Safety by design’ features can reduce
-									stalking and domestic violence — but we need
-									companies to apply it
+									‘Safety by design’ features can reduce stalking and domestic
+									violence — but we need companies to apply it
 								</h3>
 								<h4>50 minutes ago</h4>
 							</span>
@@ -291,8 +275,8 @@ const App = () => {
 							/>
 							<span>
 								<h3>
-									Stop adding ‘competitive salary’ to job
-									listings — tell me your range already
+									Stop adding ‘competitive salary’ to job listings — tell me
+									your range already
 								</h3>
 								<h4>55 minutes ago</h4>
 							</span>
@@ -304,8 +288,8 @@ const App = () => {
 							/>
 							<span>
 								<h3>
-									These fantastic toys and puzzles at special
-									pre-Black Friday prices are a steal
+									These fantastic toys and puzzles at special pre-Black Friday
+									prices are a steal
 								</h3>
 								<h4>1 hour ago</h4>
 							</span>
@@ -317,8 +301,8 @@ const App = () => {
 							/>
 							<span>
 								<h3>
-									Help, I can’t get over Hyundai’s retro-chic
-									Grandeur concept EV
+									Help, I can’t get over Hyundai’s retro-chic Grandeur concept
+									EV
 								</h3>
 								<h4>2 hour ago</h4>
 							</span>
@@ -330,8 +314,7 @@ const App = () => {
 							/>
 							<span>
 								<h3>
-									3 moves the US government could make to rein
-									in Facebook
+									3 moves the US government could make to rein in Facebook
 								</h3>
 								<h4>2 hours ago</h4>
 							</span>
@@ -342,10 +325,7 @@ const App = () => {
 								alt=''
 							/>
 							<span>
-								<h3>
-									What to expect from Apple and Meta’s
-									upcoming headsets
-								</h3>
+								<h3>What to expect from Apple and Meta’s upcoming headsets</h3>
 								<h4>4 hours ago</h4>
 							</span>
 						</li>
@@ -355,9 +335,7 @@ const App = () => {
 								alt=''
 							/>
 							<span>
-								<h3>
-									Why developers are so divided over WordPress
-								</h3>
+								<h3>Why developers are so divided over WordPress</h3>
 								<h4>6 hours ago</h4>
 							</span>
 						</li>
@@ -377,9 +355,7 @@ const App = () => {
 								src='https://next.tnwcdn.com/assets/next/img/placeholder/media/plugged.svg'
 								alt='plugged'
 							/>
-							<p>
-								Your sardonic source for consumer tech stories
-							</p>
+							<p>Your sardonic source for consumer tech stories</p>
 						</div>
 						<div
 							style={{
@@ -446,8 +422,8 @@ const App = () => {
 				<section className='newsletter'>
 					<h3>Get the snarkiest newsletter in tech</h3>
 					<p>
-						Subscribe to our twice-weekly Big Spam or check out our
-						other newsletters.
+						Subscribe to our twice-weekly Big Spam or check out our other
+						newsletters.
 					</p>
 					<div>
 						<input type='email' placeholder='Email' />
@@ -466,11 +442,7 @@ const App = () => {
 								<svg viewBox='0 0 16 16'>
 									<path d='M8,1.44144c2.1361,0,2.38911.00815,3.23268.04664a4.42649,4.42649,0,0,1,1.48549.27546A2.47861,2.47861,0,0,1,13.638,2.362a2.47851,2.47851,0,0,1,.59844.91986,4.42673,4.42673,0,0,1,.27546,1.48548c.03849.84358.04664,1.0966.04664,3.23269s-.00815,2.38911-.04664,3.23268a4.42675,4.42675,0,0,1-.27546,1.48549,2.6493,2.6493,0,0,1-1.51829,1.51829,4.42675,4.42675,0,0,1-1.48549.27546c-.84345.03849-1.09644.04664-3.23268.04664s-2.38923-.00815-3.23268-.04664a4.42675,4.42675,0,0,1-1.48549-.27546A2.47849,2.47849,0,0,1,2.362,13.638a2.47863,2.47863,0,0,1-.59844-.91986,4.42647,4.42647,0,0,1-.27546-1.48548C1.44959,10.38911,1.44144,10.1361,1.44144,8s.00815-2.38911.04664-3.23268a4.42649,4.42649,0,0,1,.27546-1.48549A2.47861,2.47861,0,0,1,2.362,2.362a2.47863,2.47863,0,0,1,.91986-.59844,4.42647,4.42647,0,0,1,1.48548-.27546C5.61089,1.44959,5.86391,1.44144,8,1.44144M8,0C5.82733,0,5.55489.0092,4.70161.04813A5.8719,5.8719,0,0,0,2.75969.42a3.92134,3.92134,0,0,0-1.417.92273A3.92134,3.92134,0,0,0,.42,2.75969,5.8719,5.8719,0,0,0,.04813,4.70161C.0092,5.55489,0,5.82732,0,8s.0092,2.4451.04813,3.29839A5.8719,5.8719,0,0,0,.42,13.24031a3.92142,3.92142,0,0,0,.92273,1.417,3.92134,3.92134,0,0,0,1.417.92273,5.8719,5.8719,0,0,0,1.94192.37186C5.55489,15.9908,5.82733,16,8,16s2.4451-.0092,3.29839-.04813A5.8719,5.8719,0,0,0,13.24031,15.58a4.09069,4.09069,0,0,0,2.3397-2.3397,5.8719,5.8719,0,0,0,.37186-1.94192C15.9908,10.4451,16,10.17267,16,8s-.0092-2.44511-.04813-3.29839A5.8719,5.8719,0,0,0,15.58,2.75969a3.92134,3.92134,0,0,0-.92273-1.417A3.92134,3.92134,0,0,0,13.24031.42,5.8719,5.8719,0,0,0,11.29839.04813C10.4451.0092,10.17267,0,8,0Z'></path>
 									<path d='M8,3.89189A4.10811,4.10811,0,1,0,12.10811,8,4.10811,4.10811,0,0,0,8,3.89189Zm0,6.77477A2.66667,2.66667,0,1,1,10.66667,8,2.66666,2.66666,0,0,1,8,10.66666Z'></path>
-									<circle
-										cx='12.27042'
-										cy='3.72958'
-										r='0.96'
-									></circle>
+									<circle cx='12.27042' cy='3.72958' r='0.96'></circle>
 								</svg>
 							</Link>
 						</li>
@@ -525,9 +497,7 @@ const App = () => {
 									/>
 								</div>
 							</div>
-							<h3>
-								Nothing Ear (1) review: Style… and substance?
-							</h3>
+							<h3>Nothing Ear (1) review: Style… and substance?</h3>
 							<span>Jul 30, 2021</span>
 						</div>
 						<div className='playlist-videos'>
@@ -538,10 +508,7 @@ const App = () => {
 										src='https://i.ytimg.com/vi/kIie5LVh7NE/hqdefault.jpg'
 										alt=''
 									/>
-									<span>
-										Nothing Ear (1) review: Style… and
-										substance?
-									</span>
+									<span>Nothing Ear (1) review: Style… and substance?</span>
 								</div>
 								<div>
 									<Link to='/' />
@@ -549,9 +516,7 @@ const App = () => {
 										src='https://i.ytimg.com/vi/3Gpmto2eoro/hqdefault.jpg'
 										alt=''
 									/>
-									<span>
-										What size iPad Pro should you buy?
-									</span>
+									<span>What size iPad Pro should you buy?</span>
 								</div>
 								<div>
 									<Link to='/' />
@@ -559,10 +524,7 @@ const App = () => {
 										src='https://i.ytimg.com/vi/UAu4d0K99Vc/hqdefault.jpg'
 										alt=''
 									/>
-									<span>
-										Apple AirTags review: The Find My
-										revolution
-									</span>
+									<span>Apple AirTags review: The Find My revolution</span>
 								</div>
 								<div>
 									<Link to='/' />
@@ -571,8 +533,7 @@ const App = () => {
 										alt=''
 									/>
 									<span>
-										Sonos Roam review: Smart speaker,
-										smarter business
+										Sonos Roam review: Smart speaker, smarter business
 									</span>
 								</div>
 								<div>
@@ -581,10 +542,7 @@ const App = () => {
 										src='https://i.ytimg.com/vi/FAx1wjv2jEE/hqdefault.jpg'
 										alt=''
 									/>
-									<span>
-										Learning guitar is better than
-										meditation
-									</span>
+									<span>Learning guitar is better than meditation</span>
 								</div>
 								<div>
 									<Link to='/' />
@@ -592,10 +550,7 @@ const App = () => {
 										src='https://i.ytimg.com/vi/jAIdYernX0w/hqdefault.jpg'
 										alt=''
 									/>
-									<span>
-										Why your hi-fi setup needs these
-										headphones
-									</span>
+									<span>Why your hi-fi setup needs these headphones</span>
 								</div>
 							</div>
 						</div>
@@ -607,13 +562,11 @@ const App = () => {
 							<h3>REACH YOUR GOALS</h3>
 							<h2>Work with us</h2>
 							<p>
-								TNW takes center stage in the tech industry,
-								offering creative media campaigns, sizzling tech
-								events, bespoke innovation programs, and prime
-								office locations in Amsterdam. Want to engage
-								your audience more effectively, innovate your
-								business, and position your brand in front of a
-								digital-savvy audience?
+								TNW takes center stage in the tech industry, offering creative
+								media campaigns, sizzling tech events, bespoke innovation
+								programs, and prime office locations in Amsterdam. Want to
+								engage your audience more effectively, innovate your business,
+								and position your brand in front of a digital-savvy audience?
 							</p>
 							<button type='button'>GET IN TOUCH</button>
 						</div>
@@ -735,11 +688,7 @@ const App = () => {
 										<svg viewBox='0 0 16 16'>
 											<path d='M8,1.44144c2.1361,0,2.38911.00815,3.23268.04664a4.42649,4.42649,0,0,1,1.48549.27546A2.47861,2.47861,0,0,1,13.638,2.362a2.47851,2.47851,0,0,1,.59844.91986,4.42673,4.42673,0,0,1,.27546,1.48548c.03849.84358.04664,1.0966.04664,3.23269s-.00815,2.38911-.04664,3.23268a4.42675,4.42675,0,0,1-.27546,1.48549,2.6493,2.6493,0,0,1-1.51829,1.51829,4.42675,4.42675,0,0,1-1.48549.27546c-.84345.03849-1.09644.04664-3.23268.04664s-2.38923-.00815-3.23268-.04664a4.42675,4.42675,0,0,1-1.48549-.27546A2.47849,2.47849,0,0,1,2.362,13.638a2.47863,2.47863,0,0,1-.59844-.91986,4.42647,4.42647,0,0,1-.27546-1.48548C1.44959,10.38911,1.44144,10.1361,1.44144,8s.00815-2.38911.04664-3.23268a4.42649,4.42649,0,0,1,.27546-1.48549A2.47861,2.47861,0,0,1,2.362,2.362a2.47863,2.47863,0,0,1,.91986-.59844,4.42647,4.42647,0,0,1,1.48548-.27546C5.61089,1.44959,5.86391,1.44144,8,1.44144M8,0C5.82733,0,5.55489.0092,4.70161.04813A5.8719,5.8719,0,0,0,2.75969.42a3.92134,3.92134,0,0,0-1.417.92273A3.92134,3.92134,0,0,0,.42,2.75969,5.8719,5.8719,0,0,0,.04813,4.70161C.0092,5.55489,0,5.82732,0,8s.0092,2.4451.04813,3.29839A5.8719,5.8719,0,0,0,.42,13.24031a3.92142,3.92142,0,0,0,.92273,1.417,3.92134,3.92134,0,0,0,1.417.92273,5.8719,5.8719,0,0,0,1.94192.37186C5.55489,15.9908,5.82733,16,8,16s2.4451-.0092,3.29839-.04813A5.8719,5.8719,0,0,0,13.24031,15.58a4.09069,4.09069,0,0,0,2.3397-2.3397,5.8719,5.8719,0,0,0,.37186-1.94192C15.9908,10.4451,16,10.17267,16,8s-.0092-2.44511-.04813-3.29839A5.8719,5.8719,0,0,0,15.58,2.75969a3.92134,3.92134,0,0,0-.92273-1.417A3.92134,3.92134,0,0,0,13.24031.42,5.8719,5.8719,0,0,0,11.29839.04813C10.4451.0092,10.17267,0,8,0Z'></path>
 											<path d='M8,3.89189A4.10811,4.10811,0,1,0,12.10811,8,4.10811,4.10811,0,0,0,8,3.89189Zm0,6.77477A2.66667,2.66667,0,1,1,10.66667,8,2.66666,2.66666,0,0,1,8,10.66666Z'></path>
-											<circle
-												cx='12.27042'
-												cy='3.72958'
-												r='0.96'
-											></circle>
+											<circle cx='12.27042' cy='3.72958' r='0.96'></circle>
 										</svg>
 									</Link>
 								</li>
