@@ -65,13 +65,7 @@ heroku open
 
 ## Features
 
-- Create basic CV
-- Add/remove sections
-- Upload your own photo
-- Switch between two input modes
-- Save data in localStorage
-- Reset form data
-- Print the CV
+- Responsive design built with Mobile First Design in mind
 
 ## Status
 
