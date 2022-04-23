@@ -8,7 +8,7 @@
 }
 
 body {
-	min-width: 320px;
+	min-width: 220px;
 }
 
 a {
@@ -133,6 +133,7 @@ aside > ul li {
 	user-select: none;
 	transition: ease-in-out 0.3s;
 	padding: 24px 40px;
+	cursor: pointer;
 }
 
 aside > ul a.active li {
@@ -155,6 +156,12 @@ aside div {
 	padding: 20px;
 	background-color: rgba(255, 255, 255, 0.15);
 	transition: ease-in-out 0.3s;
+}
+
+aside div .social-media {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 aside div .social-media li {
@@ -403,7 +410,7 @@ nav.show-menu aside {
 }
 
 .social-media li {
-	margin-right: 12px;
+	margin: 4px;
 }
 
 .watch-our-content {
