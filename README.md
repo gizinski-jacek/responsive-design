@@ -16,7 +16,7 @@ Building a copy of The Next Web home page in order to practice working with resp
 
 Github repo can be found [here](https://github.com/gizinski-jacek/responsive-design).
 
-Live demo is live on [Heroku](https://responsive-design-100943.herokuapp.com).
+Live demo can be found on [Heroku](https://responsive-design-100943.herokuapp.com).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
