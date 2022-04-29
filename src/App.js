@@ -71,7 +71,6 @@ const App = () => {
 				<Watch />
 				<Work />
 				<Footer />
-				<Stories />
 			</main>
 		</BrowserRouter>
 	);
