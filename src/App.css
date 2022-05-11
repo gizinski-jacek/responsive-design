@@ -44,6 +44,10 @@ svg {
 	width: 16px;
 }
 
+button {
+	cursor: pointer;
+}
+
 body {
 	max-width: 100%;
 	overflow-x: hidden;
