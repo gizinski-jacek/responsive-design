@@ -96,6 +96,7 @@ main > :not(:nth-child(2n)) {
 }
 
 .ham-menu {
+	cursor: pointer;
 	display: block;
 	fill: rgb(150, 150, 150);
 	height: 24px;
@@ -644,19 +645,6 @@ nav.show-menu aside {
 		margin-right: 8px;
 	}
 
-	.my-footer {
-		position: absolute;
-		top: 0;
-		right: 0;
-		direction: rtl;
-		width: fit-content;
-		background-color: transparent;
-	}
-
-	.my-footer svg {
-		border: 1px solid black;
-	}
-
 	main {
 		transition: ease-in-out 0.3s;
 	}
@@ -789,6 +777,27 @@ nav.show-menu aside {
 
 	aside li:hover {
 		color: rgb(0, 0, 0) !important;
+	}
+
+	.my-footer {
+		position: absolute;
+		top: 0;
+		right: 0;
+		direction: rtl;
+		width: fit-content;
+		background-color: transparent;
+	}
+
+	.my-footer a {
+		color: rgb(75, 75, 75);
+	}
+
+	.my-footer a:hover {
+		color: rgb(0, 0, 0);
+	}
+
+	.my-footer svg {
+		border: 1px solid rgb(0, 0, 0);
 	}
 
 	main {
