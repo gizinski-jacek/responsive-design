@@ -95,7 +95,11 @@ main > :nth-child(2n) {
 	background-color: rgb(250, 250, 250);
 }
 
-main > :not(:nth-child(2n)) {
+main .main-articles,
+main .latest-stories,
+main .newsletter,
+main .watch-our-content,
+main .work-with-us {
 	max-width: 1400px;
 }
 
@@ -375,6 +379,8 @@ nav.show-menu aside {
 }
 
 .newsletter {
+	margin-left: auto;
+	margin-right: auto;
 	color: rgb(255, 255, 255);
 	background-image: url('https://next.tnwcdn.com/assets/next/img/spacesbg.png');
 	background-size: cover;
