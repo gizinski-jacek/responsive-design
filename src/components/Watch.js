@@ -3,118 +3,75 @@ import { Link } from 'react-router-dom';
 
 const Watch = () => {
 	return (
-		<section className='work-with-us'>
-			<div className='work-with-us-top'>
-				<div className='work-with-us-text'>
-					<h3>REACH YOUR GOALS</h3>
-					<h2>Work with us</h2>
-					<p>
-						TNW takes center stage in the tech industry, offering creative media
-						campaigns, sizzling tech events, bespoke innovation programs, and
-						prime office locations in Amsterdam. Want to engage your audience
-						more effectively, innovate your business, and position your brand in
-						front of a digital-savvy audience?
-					</p>
-					<button type='button'>GET IN TOUCH</button>
+		<section className='watch-our-content'>
+			<h2>Watch what we made for you</h2>
+			<div className='videos-container'>
+				<div className='main-video'>
+					<div className='video-player-wrapper'>
+						<div className='video-player'>
+							<iframe
+								src={`https://youtube.com/embed/S1-wuoFsdT4`}
+								title='YouTube video player'
+								frameBorder='0'
+								allowFullScreen
+							/>
+						</div>
+					</div>
+					<h3>Nothing Ear (1) review: Style… and substance?</h3>
+					<span>Jul 30, 2021</span>
 				</div>
-				<div className='work-with-us-images'>
-					<div>
-						<img
-							src='https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-media.svg'
-							alt='Media'
-						/>
-						<h3>Media</h3>
-					</div>
-					<div>
-						<img
-							src='https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/companies/pillar-events.svg'
-							alt='Events'
-						/>
-						<h3>Events</h3>
-					</div>
-					<div>
-						<img
-							src='https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-spaces.svg'
-							alt='Spaces'
-						/>
-						<h3>Spaces</h3>
-					</div>
-					<div>
-						<img
-							src='https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-media.svg'
-							alt='Media'
-						/>
-						<h3>Programs</h3>
+				<div className='playlist-videos'>
+					<div className='playlist-scroll'>
+						<div>
+							<Link to='/' />
+							<img
+								src='https://i.ytimg.com/vi/kIie5LVh7NE/hqdefault.jpg'
+								alt=''
+							/>
+							<span>Nothing Ear (1) review: Style… and substance?</span>
+						</div>
+						<div>
+							<Link to='/' />
+							<img
+								src='https://i.ytimg.com/vi/3Gpmto2eoro/hqdefault.jpg'
+								alt=''
+							/>
+							<span>What size iPad Pro should you buy?</span>
+						</div>
+						<div>
+							<Link to='/' />
+							<img
+								src='https://i.ytimg.com/vi/UAu4d0K99Vc/hqdefault.jpg'
+								alt=''
+							/>
+							<span>Apple AirTags review: The Find My revolution</span>
+						</div>
+						<div>
+							<Link to='/' />
+							<img
+								src='https://i.ytimg.com/vi/0OXyJygPSRI/hqdefault.jpg'
+								alt=''
+							/>
+							<span>Sonos Roam review: Smart speaker, smarter business</span>
+						</div>
+						<div>
+							<Link to='/' />
+							<img
+								src='https://i.ytimg.com/vi/FAx1wjv2jEE/hqdefault.jpg'
+								alt=''
+							/>
+							<span>Learning guitar is better than meditation</span>
+						</div>
+						<div>
+							<Link to='/' />
+							<img
+								src='https://i.ytimg.com/vi/jAIdYernX0w/hqdefault.jpg'
+								alt=''
+							/>
+							<span>Why your hi-fi setup needs these headphones</span>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div className='work-with-us-bottom'>
-				<ul className='sponsors'>
-					<li>
-						<Link to='/'>
-							<img
-								src='https://next.tnwcdn.com/assets/next/img/partners/google.svg'
-								alt='Google logo'
-							/>
-						</Link>
-					</li>
-					<li>
-						<Link to='/'>
-							<img
-								src='https://next.tnwcdn.com/assets/next/img/partners/etoro.svg'
-								alt='Etoro logo'
-							/>
-						</Link>
-					</li>
-					<li>
-						<Link to='/'>
-							<img
-								src='https://next.tnwcdn.com/assets/next/img/partners/ibm.svg'
-								alt='IBM logo'
-							/>
-						</Link>
-					</li>
-					<li>
-						<Link to='/'>
-							<img
-								src='https://next.tnwcdn.com/assets/next/img/partners/microsoft.svg'
-								alt='Microsoft logo'
-							/>
-						</Link>
-					</li>
-					<li>
-						<Link to='/'>
-							<img
-								src='https://next.tnwcdn.com/assets/next/img/partners/paypal.svg'
-								alt='PayPal logo'
-							/>
-						</Link>
-					</li>
-					<li>
-						<Link to='/'>
-							<img
-								src='https://next.tnwcdn.com/assets/next/img/partners/vodafone.svg'
-								alt='Vodafone logo'
-							/>
-						</Link>
-					</li>
-					<li>
-						<Link to='/'>
-							<img
-								src='https://next.tnwcdn.com/assets/next/img/partners/accenture.svg'
-								alt='Accenture logo'
-							/>
-						</Link>
-					</li>
-					<li>
-						<Link to='/'>
-							<img
-								src='https://next.tnwcdn.com/assets/next/img/partners/mckinsey-company.svg'
-								alt={'McKinsey&Company logo'}
-							/>
-						</Link>
-					</li>
-				</ul>
 			</div>
 		</section>
 	);
