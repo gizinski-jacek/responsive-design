@@ -113,8 +113,7 @@ const Footer = () => {
 			</div>
 			<div className='footer-bottom'>
 				<h4>
-					TNW is a <Link to='/'>Financial Times</Link>
-					company.
+					TNW is a <Link to='/'>Financial Times</Link> company.
 				</h4>
 				<h4>{`Copyright © 2006—2021, The Next Web B.V. Made with <3 in Amsterdam.`}</h4>
 			</div>
