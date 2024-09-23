@@ -196,6 +196,7 @@ aside div > span > a {
 .my-footer a {
 	font-weight: 600;
 	color: rgb(255, 255, 255);
+	margin: 8px;
 	padding: 4px;
 	display: flex;
 	justify-content: center;
@@ -204,7 +205,6 @@ aside div > span > a {
 }
 
 .my-footer svg {
-	margin: 8px;
 	box-sizing: content-box;
 	border-radius: 50%;
 	padding: 1px;
